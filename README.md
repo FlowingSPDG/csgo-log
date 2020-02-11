@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/janstuemmel/csgo-log.svg?branch=master)](https://travis-ci.org/janstuemmel/csgo-log) [![Coverage Status](https://coveralls.io/repos/github/janstuemmel/csgo-log/badge.svg?branch=master)](https://coveralls.io/github/janstuemmel/csgo-log?branch=master) [![Godoc](https://godoc.org/github.com/janstuemmel/csgo-log?status.svg)](http://godoc.org/github.com/janstuemmel/csgo-log)
+[![Build Status](https://travis-ci.org/FlowingSPDG/csgo-log.svg?branch=master)](https://travis-ci.org/FlowingSPDG/csgo-log)
 
 # csgo-log
 
@@ -6,7 +6,7 @@ Go package for parsing csgo server logfiles. It exports types for csgo logfiles,
 
 ## Usage
 
-For more examples look at the [tests](./csgolog_test.go) and the command-line utility in [examples folder](./example). Have also a look at [godoc](http://godoc.org/github.com/janstuemmel/csgo-log).
+For more examples look at the [tests](./csgolog_test.go) and the command-line utility in [examples folder](./example). Have also a look at [godoc](http://godoc.org/github.com/FlowingSPDG/csgo-log).
 
 ```go
 package main
@@ -14,7 +14,7 @@ package main
 import (
   "fmt"
 
-  "github.com/janstuemmel/csgo-log"
+  "github.com/FlowingSPDG/csgo-log"
 )
 
 func main() {
