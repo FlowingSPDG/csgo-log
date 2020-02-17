@@ -374,7 +374,7 @@ type (
 		Team2Name        string `json:"team2_name,omitempty"`
 		Team2Score       int    `json:"team2_score,omitempty"`
 		Team2SeriesScore int    `json:"team2_series_score,omitempty"`
-		Headshot         string `json:"headshot,omitempty"`
+		Headshot         int    `json:"headshot,omitempty"`
 		Weapon           string `json:"weapon,omitempty"`
 		Reason           int    `json:"reason,omitempty"`
 		Message          string `json:"message,omitempty"`
