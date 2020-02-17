@@ -15,6 +15,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"errors"
+	"log"
 	"regexp"
 	"strconv"
 	"strings"
@@ -380,6 +381,8 @@ type (
 		File             string `json:"file,omitempty"`
 		Site             int    `json:"site,omitempty"`
 		Stage            string `json:"stage,omitempty"`
+		Victim           string `json:"victim"`
+		Attacker         string `json:"attacker"`
 	}
 
 	Rcon struct {
@@ -1054,6 +1057,7 @@ func NewGet5Event(ti time.Time, r []string) Message {
 		Event:   r[4],
 	}
 	if err := json.Unmarshal([]byte(r[3]), &get5event.Params); err != nil {
+		log.Printf("Failed to unmarshal : %v\n", err)
 		return NewUnknown(ti, r)
 	}
 	return get5event
