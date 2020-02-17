@@ -21,6 +21,34 @@ import (
 	"time"
 )
 
+// Get5Event event types(enum)
+type Get5Events string
+
+const (
+	Get5SeriesStart         Get5Events = "series_start"
+	Get5MapVeto             Get5Events = "map_veto"
+	Get5MapPick             Get5Events = "map_pick"
+	Get5SidePicked          Get5Events = "side_picked"
+	Get5KnifeStart          Get5Events = "knife_start"
+	Get5KnifeWon            Get5Events = "knife_won"
+	Get5GoingLive           Get5Events = "going_live"
+	Get5PlayerDeath         Get5Events = "player_death"
+	Get5RoundEnd            Get5Events = "round_end"
+	Get5SideSwap            Get5Events = "side_swap"
+	Get5MapEnd              Get5Events = "map_end"
+	Get5SeriesEnd           Get5Events = "series_end"
+	Get5BackupLoaded        Get5Events = "backup_loaded"
+	Get5MatchConfigLoadFail Get5Events = "match_config_load_fail"
+	Get5ClientSay           Get5Events = "client_say"
+	Get5BombPlanted         Get5Events = "bomb_planted"
+	Get5BombDefused         Get5Events = "bomb_defused"
+	Get5BombExploded        Get5Events = "bomb_exploded"
+	Get5PlayerConnected     Get5Events = "player_connect"
+	Get5PlayerDisconnect    Get5Events = "player_disconnect"
+	Get5TeamReady           Get5Events = "team_ready"
+	Get5TeamUnready         Get5Events = "team_unready"
+)
+
 // ErrorNoMatch error when pattern is not matching
 var ErrorNoMatch = errors.New("no match")
 
