@@ -383,6 +383,8 @@ type (
 		Stage            string `json:"stage,omitempty"`
 		Victim           string `json:"victim"`
 		Attacker         string `json:"attacker"`
+		Winner           string `json:"winner"`
+		WinnerSide       string `json:"winner_side"`
 	}
 
 	Rcon struct {
